@@ -11,10 +11,76 @@
         </style>
 </head>
 <body>
-    <h1>Hello from Docker!</h1>
-    <p>This website is running inside an Apache Docker Container.</p>
-    <p>To learn more about Docker, visit the <a href="https://www.docker.com/">official Docker website</a>.</p>
-    <img src="https://a3s.fi/swift/v1/csc_project/cloud_computing.png" alt="Cloud Computing" 
-    style="max-width: 100%; height: auto; margin-top: 10px;">
+<h1 style="width: 70%; height: auto;color: #431082; display: block; margin: 10px auto;text-align: center;">Assignment-3: Rahti Web-page Deployment Report</h1>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">In this project, I developed and deployed a web application using cloud-based services. The deployment process involved Allas object storage, Docker, GitHub, and Rahti. The following steps describe the work I completed.</p>
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">1. Creating a Bucket in Allas</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">First, I created a bucket in Allas, which is the object storage service provided by CSC. The bucket was used to store the image files required by my web application. This helped me keep the images separately in cloud storage instead of storing all the files directly inside the application.</p>
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">2. Uploading Images to the Bucket</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">After creating the bucket, I uploaded the required images and other static files to it. These images can then be accessed by the application when the website is running. This demonstrates the use of cloud-based object storage for managing application resources.</p>
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">3. Preparing the Docker HTML Application</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align： left;">I prepared the website content in my HTML files and Docker configuration. The Docker setup packages the application so that it can run consistently in the cloud environment. I also connected the website content with the required images stored in Allas.</p>
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">4. Updating the GitHub Repository</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">After making the required changes to the application, I updated my GitHub repository with the latest version of the project. GitHub was used as the source repository for the application code. This also made it possible for the deployment environment to use the updated project files.</p>
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">5. Rebuilding and Updating the Application in Rahti</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">Finally, I updated the build in Rahti using the latest code from my GitHub repository. The build was completed successfully, and the application was deployed in a running pod. After the successful deployment, the public web link started showing the latest version of my website.</p>
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">Conclusion</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">The complete process demonstrates a simple cloud application deployment workflow using CSC services. Allas was used for object storage, Docker was used to package the web application, GitHub was used for source-code management, and Rahti was used to build and run the application. After rebuilding the application, the updated version became available through the public web link, which is the version currently visible.</p>
+<img src="https://a3s.fi/swift/v1/csc_project/Allas_bucket.png"
+     alt="Cloud Computing"
+     style="width: 70%; height: auto; display: block; margin: 10px auto;">
+     <img src="https://a3s.fi/swift/v1/csc_project/Bucket_images.png"
+     alt="Cloud Computing"
+     style="width: 70%; height: auto; display: block; margin: 10px auto;">
+     <img src="https://a3s.fi/swift/v1/csc_project/Build_update_rahti.png"
+     alt="Cloud Computing"
+     style="width: 70%; height: auto; display: block; margin: 10px auto;">
+     <div style="height:250px;"></div>
+
+
+
+
+
+<h1 style="width: 70%; height: auto;color: #431082; display: block; margin: 10px auto;text-align: center;">Qusetion-Answer</h1>
+     <h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;"> Question: Describe reasons why so many (most?) companies are using cloud-based email and calendar services.</h2>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;"> Most companies use cloud-based email and calendar services because they are easier to manage, flexible, and often cheaper than running their own email and calendar servers. The following main reasons are listed below-</p>
+<ul style="width: 70%; height: auto; display: block; margin:0px auto; text-align: left;">
+    <li>Lower cost: Companies do not need to buy and maintain their own servers and other hardware. </li>
+    <li>Easy access: Employees can use their email and calendar from anywhere using a laptop, phone, or tablet. </li>
+    <li>Automatic updates: The cloud service provider takes care of software updates, maintenance, and improvements. </li>
+    <li>Easy to scale: When a company grows, it is easy to add more users. Users can also be removed when employees leave. </li>
+    <li>Better reliability: Cloud providers normally use multiple servers and backups, which helps reduce the risk of service interruptions or losing data. </li>
+    <li>Security: Cloud services usually provide security features such as spam and malware protection, encryption, and multi-factor authentication. </li>
+    <li>Easy collaboration: Employees can share calendars, arrange meetings, and see other people's availability easily. </li>
+    <li>Less work for IT staff: The company's IT team does not have to spend as much time managing servers, backups, updates, and email systems.</li>
+</ul>
+
+    <h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+Question: Your thoughts about when to maintain your own web server and when to use SaaS/PaaS/IaaS to provide web services?</h2>
+
+     
+<h3 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">When to maintain your own web server:</h3>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+ In my opinion, an organization should maintain its own web server when it needs more control over its data, hardware, network, and security. This can be important for organizations such as defense or intelligence agencies, which may handle highly sensitive or classified information. It can also be useful for companies that have special requirements and their own IT staff to manage the servers. However, maintaining your own server can cost more and requires regular maintenance, security updates, backups, and technical knowledge.</p>
+
+     
+<h3 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">When to use SaaS/PaaS/IaaS:</h3>
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+ For most companies, I think cloud services are a more practical choice. SaaS (Software as a Service) is useful when a company wants to use ready-made software, such as email or calendar services. PaaS (Platform as a Service) is useful for developers who want to build and run web applications without managing the servers themselves. IaaS (Infrastructure as a Service) is suitable when a company needs more control over virtual servers, operating systems, and networks but does not want to maintain physical hardware. In my opinion, cloud services can save money and reduce the amount of maintenance and technical work needed.Question: Describe the advantages and disadvantages of using cloud-based email and calendar services.</p>
+
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">Question: List and explain some pros and cons (for example CDN challenges) of public DNS resolvers (Google's 8.8.8.8, Cloudflare's 1.1.1.1 etc.) vs common home networking, where end users are using ISP's DNS resolvers.</h2>
+
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+Public DNS resolvers such as Google DNS (8.8.8.8) and Cloudflare DNS (1.1.1.1) are available for anyone to use. They can be fast, reliable, and may provide better privacy and security features. They are also useful when the DNS service provided by an ISP (Internet Service Provider) is slow or has problems. However, a public DNS resolver may not always select the closest server for a user when a website uses a CDN (Content Delivery Network). This can sometimes result in slightly slower access to the website.</p>
+
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+In a normal home network, the ISP's DNS resolver is usually provided automatically, so the user does not need to configure anything. The ISP's DNS can sometimes provide better CDN routing because it has information about the user's network and location. However, the ISP's DNS may not always be as fast or offer as many privacy and security features as public DNS services. Therefore, public DNS and ISP DNS both have advantages and disadvantages, depending on the user's needs.</p>
+
+<h2 style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">Question: Describe reasons why many IoT devices (internet-connected home appliances, Smart-TVs and such) are using Google's 8.8.8.8 or some other public DNS resolvers.</h2>
+
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+Many IoT (Internet of Things) devices use public DNS resolvers such as Google DNS (8.8.8.8) because they are reliable and available almost everywhere. The device can use the same DNS service even when it is connected to different Internet providers or different home networks.</p>
+
+<p style="width: 70%; height: auto; display: block; margin: 10px auto;text-align: left;">
+Another reason is simplicity and reliability. Device manufacturers can configure a public DNS server directly in the device, so the device does not have to depend completely on the DNS service provided by the user's ISP (Internet Service Provider). Public DNS services are also designed to handle a large number of requests and usually have good availability. This can help Smart-TVs, smart appliances and other IoT devices reliably connect to their cloud services, updates and other online features.</p>
 </body>
 </html>
